@@ -16,8 +16,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Register Notification User's Permission
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound|UIUserNotificationTypeBadge categories:nil]];
+    }
+    
+    // Set icon badge number to zero
+    [application cancelAllLocalNotifications ];
+    application.applicationIconBadgeNumber = 0;
+
     return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    [application cancelAllLocalNotifications ];
+    application.applicationIconBadgeNumber = 0;
+    UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reminder" message:notification.alertBody delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -31,7 +50,10 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    [application cancelAllLocalNotifications ];
+    application.applicationIconBadgeNumber = 0;
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

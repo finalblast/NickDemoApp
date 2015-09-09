@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ToDoListTableViewController.h
 //  NickDemoApp
 //
 //  Created by Nam (Nick) N. HUYNH on 9/7/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ToDoListTableViewController : UITableViewController
 
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 
 @end
-

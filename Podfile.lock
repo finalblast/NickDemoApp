@@ -1,0 +1,10 @@
+PODS:
+  - SmileWeather (0.0.4)
+
+DEPENDENCIES:
+  - SmileWeather (~> 0.0)
+
+SPEC CHECKSUMS:
+  SmileWeather: 56026ee7214c666001e1e6f4f59de46af827896a
+
+COCOAPODS: 0.39.0.beta.4
