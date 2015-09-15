@@ -7,14 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SmileWeatherDownloader.h"
 
 @interface ToDoItem : NSObject
 
 @property NSString *itemName;
-@property BOOL completed;
+@property NSNumber *completed;
 @property NSDate *creationDate;
-@property BOOL isTravel;
+@property NSNumber *isTravel;
+@property CLPlacemark *travelPlace;
 
 - (void)markAsCompleted:(BOOL)isCompleted;
+- (NSComparisonResult)compareName:(ToDoItem *)otherObject;
 
 @end

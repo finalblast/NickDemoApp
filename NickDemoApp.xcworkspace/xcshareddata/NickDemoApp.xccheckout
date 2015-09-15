@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D40A2975-93F6-4BDE-AF56-5975CDB06222</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NickDemoApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EDE7A77C693E9FB75DB9BAFA9503BBEA562A611C</key>
+		<string>https://github.com/finalblast/NickDemoApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NickDemoApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EDE7A77C693E9FB75DB9BAFA9503BBEA562A611C</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/finalblast/NickDemoApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EDE7A77C693E9FB75DB9BAFA9503BBEA562A611C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EDE7A77C693E9FB75DB9BAFA9503BBEA562A611C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NickDemoApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

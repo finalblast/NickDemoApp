@@ -7,15 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ToDoItem.h"
 
 @interface AddToDoItemViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
-@property ToDoItem *toDoItem;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (weak, nonatomic) IBOutlet UITextField *textPlace;
+@property (weak, nonatomic) IBOutlet UIView * searchView;
 
 @end

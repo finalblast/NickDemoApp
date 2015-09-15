@@ -18,7 +18,7 @@
 
 
 - (void)markAsCompleted:(BOOL)isCompleted {
-    self.completed = isCompleted;
+    self.completed = @(isCompleted);
     [self setCompletionDate];
 }
 
@@ -28,6 +28,10 @@
     } else {
         self.completionDate = nil;
     }
+}
+
+- (NSComparisonResult)compareName:(ToDoItem *)otherObject {
+    return [self.itemName compare:otherObject.itemName];
 }
 
 
