@@ -39,14 +39,14 @@
 		4A6128E36B64BEA2BADC9EBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32C84061BA1875400EC87E5 /* ToDoItems.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoItems.xcdatamodel; sourceTree = "<group>"; };
 		B32C84081BA18E9B00EC87E5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		B388CD6B1B9D2C570077BC12 /* NickDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NickDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B388CD6B1B9D2C570077BC12 /* WTo-Do Lists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WTo-Do Lists.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B388CD6F1B9D2C570077BC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B388CD701B9D2C570077BC12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B388CD721B9D2C570077BC12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B388CD731B9D2C570077BC12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B388CD791B9D2C570077BC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B388CD7B1B9D2C570077BC12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B388CD841B9D2C570077BC12 /* NickDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NickDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B388CD841B9D2C570077BC12 /* WTo-Do ListsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WTo-Do ListsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B388CD891B9D2C570077BC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B388CD8A1B9D2C570077BC12 /* NickDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NickDemoAppTests.m; sourceTree = "<group>"; };
 		B388CD941B9D30150077BC12 /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 		B388CD6C1B9D2C570077BC12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B388CD6B1B9D2C570077BC12 /* NickDemoApp.app */,
-				B388CD841B9D2C570077BC12 /* NickDemoAppTests.xctest */,
+				B388CD6B1B9D2C570077BC12 /* WTo-Do Lists.app */,
+				B388CD841B9D2C570077BC12 /* WTo-Do ListsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B388CD6A1B9D2C570077BC12 /* NickDemoApp */ = {
+		B388CD6A1B9D2C570077BC12 /* WTo-Do Lists */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B388CD8E1B9D2C570077BC12 /* Build configuration list for PBXNativeTarget "NickDemoApp" */;
+			buildConfigurationList = B388CD8E1B9D2C570077BC12 /* Build configuration list for PBXNativeTarget "WTo-Do Lists" */;
 			buildPhases = (
 				44C4D1544819C5FA98648D2B /* Check Pods Manifest.lock */,
 				B388CD671B9D2C570077BC12 /* Sources */,
@@ -194,14 +194,14 @@
 			);
 			dependencies = (
 			);
-			name = NickDemoApp;
+			name = "WTo-Do Lists";
 			productName = NickDemoApp;
-			productReference = B388CD6B1B9D2C570077BC12 /* NickDemoApp.app */;
+			productReference = B388CD6B1B9D2C570077BC12 /* WTo-Do Lists.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B388CD831B9D2C570077BC12 /* NickDemoAppTests */ = {
+		B388CD831B9D2C570077BC12 /* WTo-Do ListsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B388CD911B9D2C570077BC12 /* Build configuration list for PBXNativeTarget "NickDemoAppTests" */;
+			buildConfigurationList = B388CD911B9D2C570077BC12 /* Build configuration list for PBXNativeTarget "WTo-Do ListsTests" */;
 			buildPhases = (
 				B388CD801B9D2C570077BC12 /* Sources */,
 				B388CD811B9D2C570077BC12 /* Frameworks */,
@@ -212,9 +212,9 @@
 			dependencies = (
 				B388CD861B9D2C570077BC12 /* PBXTargetDependency */,
 			);
-			name = NickDemoAppTests;
+			name = "WTo-Do ListsTests";
 			productName = NickDemoAppTests;
-			productReference = B388CD841B9D2C570077BC12 /* NickDemoAppTests.xctest */;
+			productReference = B388CD841B9D2C570077BC12 /* WTo-Do ListsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B388CD661B9D2C570077BC12 /* Build configuration list for PBXProject "NickDemoApp" */;
+			buildConfigurationList = B388CD661B9D2C570077BC12 /* Build configuration list for PBXProject "WTo-Do Lists" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -248,8 +248,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B388CD6A1B9D2C570077BC12 /* NickDemoApp */,
-				B388CD831B9D2C570077BC12 /* NickDemoAppTests */,
+				B388CD6A1B9D2C570077BC12 /* WTo-Do Lists */,
+				B388CD831B9D2C570077BC12 /* WTo-Do ListsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,7 +349,7 @@
 /* Begin PBXTargetDependency section */
 		B388CD861B9D2C570077BC12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B388CD6A1B9D2C570077BC12 /* NickDemoApp */;
+			target = B388CD6A1B9D2C570077BC12 /* WTo-Do Lists */;
 			targetProxy = B388CD851B9D2C570077BC12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -451,13 +451,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = NickDemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WTo-Do Lists";
 			};
 			name = Debug;
 		};
@@ -468,13 +467,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = NickDemoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WTo-Do Lists";
 			};
 			name = Release;
 		};
@@ -492,7 +490,7 @@
 				);
 				INFOPLIST_FILE = NickDemoAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WTo-Do ListsTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NickDemoApp.app/NickDemoApp";
 			};
 			name = Debug;
@@ -507,7 +505,7 @@
 				);
 				INFOPLIST_FILE = NickDemoAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WTo-Do ListsTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NickDemoApp.app/NickDemoApp";
 			};
 			name = Release;
@@ -515,7 +513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B388CD661B9D2C570077BC12 /* Build configuration list for PBXProject "NickDemoApp" */ = {
+		B388CD661B9D2C570077BC12 /* Build configuration list for PBXProject "WTo-Do Lists" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B388CD8C1B9D2C570077BC12 /* Debug */,
@@ -524,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B388CD8E1B9D2C570077BC12 /* Build configuration list for PBXNativeTarget "NickDemoApp" */ = {
+		B388CD8E1B9D2C570077BC12 /* Build configuration list for PBXNativeTarget "WTo-Do Lists" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B388CD8F1B9D2C570077BC12 /* Debug */,
@@ -533,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B388CD911B9D2C570077BC12 /* Build configuration list for PBXNativeTarget "NickDemoAppTests" */ = {
+		B388CD911B9D2C570077BC12 /* Build configuration list for PBXNativeTarget "WTo-Do ListsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B388CD921B9D2C570077BC12 /* Debug */,

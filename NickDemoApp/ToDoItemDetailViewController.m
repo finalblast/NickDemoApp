@@ -32,8 +32,10 @@ static NSString * const reuseIdentifier = @"searchCell";
 static NSString * const searchTableIdentifier = @"SearchTable";
 static NSString * const demoLocation_key = @"demoLocation";
 
-- (void) firstLaunchRegister {
+/* Lauch data when recieved data from source controller */
 
+- (void) firstLaunchRegister {
+    
     userDefaults = [NSUserDefaults standardUserDefaults];
     CLLocationCoordinate2D coordinate = self.itemToShow.travelPlace.location.coordinate;
     NSNumber *lat = [NSNumber numberWithDouble:coordinate.latitude];
@@ -45,6 +47,10 @@ static NSString * const demoLocation_key = @"demoLocation";
     [userDefaults registerDefaults:userLocation];
 }
 
+/* Checking if data was saved
+ * @return user default location
+ */
+
 - (CLLocation *) locationInUserDefaults {
     if (!userDefaults) {
         userDefaults = [NSUserDefaults standardUserDefaults];
@@ -55,6 +61,10 @@ static NSString * const demoLocation_key = @"demoLocation";
     return location;
 }
 
+/* Save user data
+ * @parameter is user location
+ */
+
 - (void) saveLocationInUserDefaults:(CLLocation *)location {
     if (!userDefaults) {
         userDefaults = [NSUserDefaults standardUserDefaults];
@@ -64,7 +74,7 @@ static NSString * const demoLocation_key = @"demoLocation";
     NSNumber *lon = [NSNumber numberWithDouble:coordinate.longitude];
     [userDefaults setObject:lat forKey:@"lat"];
     [userDefaults setObject:lon forKey:@"long"];
-                     
+    
 }
 
 - (void)viewDidLoad {
@@ -77,6 +87,9 @@ static NSString * const demoLocation_key = @"demoLocation";
     [self getWeatherData];
 }
 
+
+/* Getting weather from user location */
+
 - (void) getWeatherData {
     CLLocation *location = [self locationInUserDefaults];
     [[SmileWeatherDownLoader sharedDownloader] getWeatherDataFromLocation:location completion:^(SmileWeatherData *data, NSError *error) {
@@ -87,6 +100,8 @@ static NSString * const demoLocation_key = @"demoLocation";
         }
     }];
 }
+
+/* Config SearchController for iOS 8.0 and later */
 
 - (void) configureSearchControllerAndSearchResultsController {
     self.searchTableVC = [self.storyboard instantiateViewControllerWithIdentifier:searchTableIdentifier];
@@ -147,7 +162,7 @@ static NSString * const demoLocation_key = @"demoLocation";
     [self saveLocationInUserDefaults:placeMark.location];
     self.searchController.active = NO;
     demoVC.loading = YES;
-
+    
     [[SmileWeatherDownLoader sharedDownloader] getWeatherDataFromPlacemark:placeMark completion:^(SmileWeatherData *data, NSError *error) {
         if (error) {
             NSLog(@"Error -- > : %@", error);
@@ -166,13 +181,13 @@ static NSString * const demoLocation_key = @"demoLocation";
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

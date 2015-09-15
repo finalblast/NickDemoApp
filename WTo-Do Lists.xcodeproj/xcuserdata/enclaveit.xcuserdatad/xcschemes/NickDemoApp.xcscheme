@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B388CD6A1B9D2C570077BC12"
-               BuildableName = "NickDemoApp.app"
-               BlueprintName = "NickDemoApp"
-               ReferencedContainer = "container:NickDemoApp.xcodeproj">
+               BuildableName = "WTo-Do Lists.app"
+               BlueprintName = "WTo-Do Lists"
+               ReferencedContainer = "container:WTo-Do Lists.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B388CD831B9D2C570077BC12"
-               BuildableName = "NickDemoAppTests.xctest"
-               BlueprintName = "NickDemoAppTests"
-               ReferencedContainer = "container:NickDemoApp.xcodeproj">
+               BuildableName = "WTo-Do ListsTests.xctest"
+               BlueprintName = "WTo-Do ListsTests"
+               ReferencedContainer = "container:WTo-Do Lists.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B388CD831B9D2C570077BC12"
-               BuildableName = "NickDemoAppTests.xctest"
-               BlueprintName = "NickDemoAppTests"
-               ReferencedContainer = "container:NickDemoApp.xcodeproj">
+               BuildableName = "WTo-Do ListsTests.xctest"
+               BlueprintName = "WTo-Do ListsTests"
+               ReferencedContainer = "container:WTo-Do Lists.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B388CD6A1B9D2C570077BC12"
-            BuildableName = "NickDemoApp.app"
-            BlueprintName = "NickDemoApp"
-            ReferencedContainer = "container:NickDemoApp.xcodeproj">
+            BuildableName = "WTo-Do Lists.app"
+            BlueprintName = "WTo-Do Lists"
+            ReferencedContainer = "container:WTo-Do Lists.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B388CD6A1B9D2C570077BC12"
-            BuildableName = "NickDemoApp.app"
-            BlueprintName = "NickDemoApp"
-            ReferencedContainer = "container:NickDemoApp.xcodeproj">
+            BuildableName = "WTo-Do Lists.app"
+            BlueprintName = "WTo-Do Lists"
+            ReferencedContainer = "container:WTo-Do Lists.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B388CD6A1B9D2C570077BC12"
-            BuildableName = "NickDemoApp.app"
-            BlueprintName = "NickDemoApp"
-            ReferencedContainer = "container:NickDemoApp.xcodeproj">
+            BuildableName = "WTo-Do Lists.app"
+            BlueprintName = "WTo-Do Lists"
+            ReferencedContainer = "container:WTo-Do Lists.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

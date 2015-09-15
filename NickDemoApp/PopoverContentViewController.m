@@ -23,6 +23,10 @@
 
 @implementation PopoverContentViewController
 
+/* Checking out if there is iPad UI
+ * @return YES if true, otherwise NO
+ */
+
 - (BOOL)isInPopover {
     Class popoverClass = NSClassFromString(@"UIPopoverController");
     
@@ -33,6 +37,8 @@
     }
     
 }
+
+/* User selected Sort By Name */
 
 - (void)sortByName:(id)paramSender {
     if ([self isInPopover]) {
@@ -47,6 +53,8 @@
     }
 }
 
+/* User selected Sort By Date */
+
 - (void)sortByDate:(id)paramSender {
     if ([self isInPopover]) {
         /* Sort data list and then dismiss popover */
@@ -59,6 +67,8 @@
         /* Handle case for iPhone */
     }
 }
+
+/* User selected Sort By Type */
 
 - (void)sortByType:(id)paramSender {
     if ([self isInPopover]) {
@@ -73,6 +83,8 @@
     }
 }
 
+/* User selected Clear to Clear Sorting */
+
 - (void)clearClicked:(id)paramSender {
     if ([self isInPopover]) {
         /* Clear sorting */
@@ -86,6 +98,8 @@
     }
 }
 
+/* Implements methods*/
+
 - (void)performSelectedItemPopover {
     NSLog(@"%ld", (long)self.selectedItem);
     [self.delegate sortBySelectedFromPopover:self.selectedItem];
@@ -93,7 +107,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    // Creating UI
+    
     self.preferredContentSize = CGSizeMake(200.0f, 225.0f);
     
     CGRect buttonRect = CGRectMake(20.0f, 20.0f, 160.0f, 37.0f);
@@ -143,7 +159,7 @@
     self.buttonClear.frame = buttonRect;
     
     [self.view addSubview:self.buttonClear];
-        
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -152,13 +168,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

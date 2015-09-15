@@ -73,7 +73,7 @@
 }
 
 
-/*Override method on PopoverProtocol*/
+/* Override method on PopoverProtocol */
 - (void)sortBySelectedFromPopover:(NSInteger) selectedItem {
     
     switch (selectedItem) {
@@ -96,7 +96,7 @@
     
 }
 
-/*Sorting methods*/
+/* Sorting methods */
 
 - (void)sortByName {
     self.sortedItems = [[self.toDoItems sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
@@ -238,7 +238,7 @@
     } else {
         _selectedItem = [self.toDoItems objectAtIndex:indexPath.row];
     }
-
+    
     if ([_selectedItem.isTravel boolValue]) {
         [self performSegueWithIdentifier:@"showDetails" sender:nil];
     }

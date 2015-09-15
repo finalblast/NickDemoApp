@@ -18,6 +18,5 @@
 @property CLPlacemark *travelPlace;
 
 - (void)markAsCompleted:(BOOL)isCompleted;
-- (NSComparisonResult)compareName:(ToDoItem *)otherObject;
 
 @end

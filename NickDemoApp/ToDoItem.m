@@ -30,9 +30,5 @@
     }
 }
 
-- (NSComparisonResult)compareName:(ToDoItem *)otherObject {
-    return [self.itemName compare:otherObject.itemName];
-}
-
 
 @end

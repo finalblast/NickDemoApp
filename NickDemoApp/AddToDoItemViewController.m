@@ -30,10 +30,14 @@
 static NSString * const reuseIdentifier = @"searchCell";
 static NSString * const searchTableIdentifier = @"SearchTable";
 
+# pragma TextFieldDelegate
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
+
+#pragma UITableViewDatasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -46,7 +50,7 @@ static NSString * const searchTableIdentifier = @"SearchTable";
         } else {
             return 0;
         }
-
+        
     } else {
         return 2;
     }
@@ -99,11 +103,12 @@ static NSString * const searchTableIdentifier = @"SearchTable";
 }
 
 #pragma mark - UITableViewDelegate
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     if ([tableView isEqual:_searchTableVC.tableView]) {
-     
+        
         CLPlacemark *placeMark = self.searchResults[indexPath.row];
         _place = placeMark;
         self.textPlace.text = [SmileWeatherDownLoader placeNameForSearchDisplay:placeMark];
@@ -113,6 +118,7 @@ static NSString * const searchTableIdentifier = @"SearchTable";
     
 }
 
+/* Switch change when the TO-DO task is travel */
 
 - (void)tSwitchChanged:(id)sender {
     UISwitch* switchControl = sender;
@@ -135,6 +141,8 @@ static NSString * const searchTableIdentifier = @"SearchTable";
     }
 }
 
+/* Switch change when user want to snooze */
+
 - (void)sSwitchChanged:(id)sender {
     UISwitch* switchControl = sender;
     if ([switchControl isOn]) {
@@ -144,6 +152,8 @@ static NSString * const searchTableIdentifier = @"SearchTable";
     }
 }
 
+/* Tap Gesture On Screen Clicked */
+
 - (IBAction)tapGestureClicked:(id)sender {
     [self.view endEditing:YES];
 }
@@ -151,6 +161,8 @@ static NSString * const searchTableIdentifier = @"SearchTable";
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
+/* Search Controller config for iOS 8.0 and later */
 
 - (void)configureSearchControllerAndSearchResultsController {
     
@@ -163,7 +175,7 @@ static NSString * const searchTableIdentifier = @"SearchTable";
     self.searchController.hidesNavigationBarDuringPresentation = NO;
     self.searchController.dimsBackgroundDuringPresentation = YES;
     self.searchController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
-
+    
     [self.searchView addSubview:_searchController.searchBar];
     
     [_searchController.searchBar sizeToFit];
@@ -191,9 +203,11 @@ static NSString * const searchTableIdentifier = @"SearchTable";
 }
 
 
+#pragma CoreData
+
 - (NSManagedObjectContext *)manageObjectContext {
     NSManagedObjectContext *context = nil;
-
+    
     id delegate = [[UIApplication sharedApplication] delegate];
     
     if ([delegate performSelector:@selector(managedObjectContext)]) {
